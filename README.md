@@ -1,7 +1,8 @@
 # <img src="https://github.com/RivkaBauer/shopping-cart/assets/74552946/30989687-7b03-41c8-97c6-ceb4442cd7ca" width="40" height="40" alt="carts"> Shopping cart
 
-![screenshoot1](https://github.com/RivkaBauer/shopping-cart/assets/74552946/37dacc1b-dba8-476d-bd29-bb79bc924ab8)
-![screenshoot2](https://github.com/RivkaBauer/shopping-cart/assets/74552946/d702d6f9-4180-4e23-b935-93fa9e1c43bc)
+![screenshoot1](https://github.com/RivkaBauer/shopping-cart/assets/74552946/990fd65a-9eab-4935-b572-5025c21c73ea)
+
+![screenshoot2](https://github.com/RivkaBauer/shopping-cart/assets/74552946/77ca0429-c6f0-45bb-80dd-16cb7bb766b4)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
 
