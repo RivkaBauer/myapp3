@@ -1,0 +1,38 @@
+<button (click)="nextHome()"(click)="nextHome" mat-fab color="warn" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+  </button>
+  <div class="cart-icon">
+    <img (click)="nextCart()" src="assets/images/carts.png" alt="Cart Icon">
+    <span class="cart-quantity">{{ totalQuantity }}</span>
+  </div>
+  <h1 class="titlePage">Add New Product</h1>
+  <div class="container">
+    <button class="title" mat-fab extended color="accent" (click)="nextProducts()">products</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCart()">purchases</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCustomers()">customers</button>
+  </div>
+  <div class="addNew">
+<h2>Add new product</h2>
+<form [formGroup]="productForm" (ngSubmit)="addnewProduct()">
+    <div class="newProduct" >
+        <label >Name: </label>
+        <input id="name" type="text" formControlName="name">
+    </div>
+    <div class="newProduct">
+        <label >Description: </label>
+        <input id="description" type="text" formControlName="description">
+    </div>
+    <div class="newProduct">
+        <label >Price: </label>
+        <input id="price" type="number" formControlName="price">
+    </div>
+    <div class="newProduct">
+        <label >Image: </label>
+        <input id="imageUrl" type="file" (change)="handleImageUpload($event)">
+    </div>
+    <div class="example-button-row">
+       <button mat-raised-button color="accent" type="submit" >Add new product</button>
+    </div>
+    
+</form>
+</div>

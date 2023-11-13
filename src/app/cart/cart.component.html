@@ -1,0 +1,78 @@
+
+<button (click)="nextHome()" mat-fab color="warn" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+</button>
+<div class="cart-icon">
+    <img src="assets/images/carts.png" alt="Cart Icon">
+    <span class="cart-quantity">{{ totalQuantity }}</span>
+  </div>
+<h1 class="titlePage" >Purchases</h1>
+<div class="container">
+    <button class="title" mat-fab extended color="accent"(click)="nextProducts()">products</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCart()">purchases</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCustomers()">customers</button>
+</div>
+<div class="search-container">
+    <input [(ngModel)]="searchTerm" placeholder="Search products..." (ngModelChange)="onSearchTermChange()" />
+</div>
+
+
+<!--<table class="table table-sm table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Product name</th>
+            <th>Quantity</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cartItem of filteredCart">
+            <td> {{ cartItem.product.name }} 
+                <span *ngIf="!cartItem.available" style="color: red;">(SOLD OUT)</span>
+            </td>
+            <td> {{ cartItem.quantity }} </td>
+            <td *ngIf="cartItem.available"> 
+                {{ cartItem.addedDate | date:'short' }}
+            </td>
+            <td *ngIf="cartItem.available">
+                <ul>
+                    <li *ngFor="let date of cartItem.addedDate">
+                        {{ date | date:'short' }}
+                    </li>
+                </ul>
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="removeProductFromCart(cartItem.product.id)">Remove product from cart</button>
+            </td>
+        </tr>
+    </tbody>
+</table>-->
+<table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Purchase Dates</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cartItem of filteredCart">
+        <td>{{ cartItem.product.name }}
+            <span *ngIf="!cartItem.available" style="color: red;">(SOLD OUT)</span>
+        </td>
+        <td>{{ cartItem.quantity }}</td>
+        <td>
+          <ul>
+            <li *ngFor="let date of cartItem.addedDate">
+              {{ date | date:'short' }}
+            </li>
+          </ul>
+        </td>
+        <td>
+            <button class="btn btn-danger" (click)="removeProductFromCart(cartItem.product.id)">Remove product from cart</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

@@ -1,0 +1,14 @@
+
+<button (click)="nextHome()" mat-fab color="warn" aria-label="Example icon button with a home icon">
+    <mat-icon>home</mat-icon>
+</button>
+<div class="cart-icon">
+    <img (click)="nextCart()" src="assets/images/carts.png" alt="Cart Icon">
+    <span class="cart-quantity">{{ totalQuantity }}</span>
+  </div>
+<h1 class="titlePage" >Customers</h1>
+<div class="container">
+    <button class="title" mat-fab extended color="accent"(click)="nextProducts()">products</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCart()">purchases</button>
+    <button class="title" mat-fab extended color="accent" (click)="nextCustomers()" >customers</button>
+</div>

@@ -1,0 +1,134 @@
+tbody {
+  font-family: 'Arial', sans-serif;
+
+}
+
+section {
+  display: table;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+
+
+}
+
+.example-button-container {
+  /* display: flex;
+    justify-content: center;
+    width: 120px;*/
+  margin: 10px 0;
+  display: table-cell;
+  max-width: 600px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+button {
+  margin: 0 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.titleNewProduct {
+  flex: 1;
+  text-align: center;
+  margin: 0 585px;
+  margin-top: 10px;
+}
+
+.titlePage {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Imprint MT Shadow', sans-serif;
+}
+
+.editProduct {
+  margin-bottom: 10px;
+}
+
+.newProduct {
+  margin-bottom: 10px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 calc(33.33% - 10px); /* כאן הגדרת הגודל של כל מוצר */
+  margin: 5px; 
+  margin-bottom: 10px;
+}
+
+.product-details .product-info {
+  flex-grow: 1;
+}
+
+.product-details .edit-form {
+  width: 200px;
+  margin-left: 20px;
+}
+
+.cart-icon img {
+  width: 40px;
+  /* גודל האייקון של העגלת קניות */
+  vertical-align: middle;
+}
+
+.cart-icon {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+
+.centered-text {
+  text-align: center;
+  /* ממורכז את הטקסט */
+  max-width: 50ch;
+  /* עד 30 תווים בשורה */
+  margin: 0 auto;
+  /* ממרכז את הטקסט באופן אופקי */
+}
+
+.centerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
