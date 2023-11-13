@@ -1,5 +1,6 @@
 # Shopping cart
-![image]()
+<img src="https://github.com/RivkaBauer/shopping-cart/assets/74552946/30989687-7b03-41c8-97c6-ceb4442cd7ca" width="200" height="200" alt="carts">
+
 ![carts](https://github.com/RivkaBauer/shopping-cart/assets/74552946/30989687-7b03-41c8-97c6-ceb4442cd7ca)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.7.
